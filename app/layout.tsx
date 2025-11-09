@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -27,9 +28,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <TopBar />
         <Header />
-        {children}
-        <Footer />
+        {/* Espaço para não sobrepor o conteúdo (TopBar + Header) */}
+        <div className="pt-28 md:pt-20">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

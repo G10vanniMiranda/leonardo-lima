@@ -47,10 +47,8 @@ export default function Home() {
         )}
       </div>
 
-      {/* HEADER agora está no layout global */}
-
       {/* SEÇÃO 1 */}
-      <section className="pt-32 pb-16 relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16">
+      <section className="pt-16 pb-16 relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16">
         {/* OVERLAY DO TEXTO (SEÇÃO 1)
             - Mobile: este bloco fica sobre a imagem
             - AJUSTE A POSIÇÃO VERTICAL: altere o valor de 'top-[60%]' abaixo
@@ -78,7 +76,7 @@ export default function Home() {
             <a
               href="https://wa.me/5569992638989"
               target="_blank"
-              className="px-8 py-3 bg-linear-to-r from-gray-600 to-gray-400 text-black font-bold rounded-xl hover:scale-105 hover:shadow-[0_0_20px_#555] transition-all"
+              className="inline-flex items-center justify-center w-80 sm:w-auto mx-auto px-8 py-3 bg-linear-to-r from-gray-600 to-gray-400 text-black font-bold rounded-xl hover:scale-105 hover:shadow-[0_0_20px_#555] transition-all"
             >
               Falar com o Advogado
             </a>
@@ -105,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO 2 */}
-      <section className="relative py-24 px-8 text-center md:text-left overflow-hidden">
+      <section className="relative pt-34 py-24 px-8 text-center md:text-left overflow-hidden">
         {/* Vídeo de fundo suave */}
         <div className="absolute inset-0 z-0 opacity-20">
           <video autoPlay loop muted className="w-full h-full object-cover">
@@ -161,17 +159,17 @@ export default function Home() {
           <p className="text-gray-400 mb-10 max-w-xl mx-auto">
             Atendimento 24h para situações urgentes. Converse agora com o advogado e garanta seus direitos.
           </p>
-          <div className="flex flex-col md:flex-row justify-center gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
             <a
               href="https://wa.me/5569992638989"
               target="_blank"
-              className="px-8 py-4 bg-linear-to-r from-gray-600 to-gray-400 text-black font-bold rounded-xl hover:scale-105 hover:shadow-[0_0_25px_#555] transition-all"
+              className="inline-flex w-80 sm:w-auto items-center justify-center px-8 py-3 md:py-4 text-base bg-linear-to-r from-gray-600 to-gray-400 text-black font-bold rounded-xl hover:scale-105 hover:shadow-[0_0_25px_#555] transition-all"
             >
               Falar Agora
             </a>
             <a
               href="#"
-              className="px-8 py-4 border border-gray-600 text-white rounded-xl hover:bg-gray-800 hover:scale-105 transition-all"
+              className="inline-flex w-80 sm:w-auto items-center justify-center px-8 py-3 md:py-4 text-base border border-gray-600 text-white font-bold rounded-xl hover:bg-gray-800 hover:scale-105 transition-all"
             >
               Agendar Consulta
             </a>
@@ -205,8 +203,6 @@ export default function Home() {
           </svg>
         </motion.a>
       </div>
-
-      {/* FOOTER agora está no layout global */}
     </main>
   );
 }

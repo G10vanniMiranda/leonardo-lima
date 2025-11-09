@@ -6,7 +6,8 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between px-10 md:px-16 py-2 border-b border-gray-800 bg-black/70 backdrop-blur-xl fixed w-full top-0 z-50">
+        // Header ajustado para ficar imediatamente abaixo do TopBar (sem espaçamento visível)
+        <header className="flex items-center justify-between px-10 md:px-16 py-2 border-b border-gray-800 bg-black/70 backdrop-blur-xl fixed w-full top-14 md:top-9 z-50">
             {/* Logo do escritório */}
             <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
                 <Link href="/" aria-label="Página inicial">
