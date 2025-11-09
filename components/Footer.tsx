@@ -11,7 +11,7 @@ export default function Footer() {
                     <ul className="space-y-1 text-gray-400">
                         <li>OAB/BA 87995</li>
                         <li>CNPJ: 55.514.360/0001-01</li>
-                        <li>Salvador/BA — Centro</li>
+                        <li>Vitória da Conquista/BA</li>
                     </ul>
                 </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
                                 advogado@leolima.adv.br
                             </a>
                         </li>
-                        <li>Atendimento: seg–sex, 9h–18h</li>
+                        <li>Atendimento: seg–sex, 8h–18h</li>
                         <li>Plantão: sob disponibilidade</li>
                     </ul>
                 </div>
