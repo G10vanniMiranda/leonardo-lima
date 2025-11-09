@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         // Header ajustado para ficar imediatamente abaixo do TopBar (sem espaçamento visível)
-        <header className="flex items-center justify-between px-10 md:px-16 py-2 border-b border-gray-800 bg-black/70 backdrop-blur-xl fixed w-full top-14 md:top-9 z-50">
+        <header className="flex items-center justify-between px-10 md:px-16 py-2 border-b border-gray-800 bg-black/70 backdrop-blur-xl fixed w-full top-12 md:top-9 z-50">
             {/* Logo do escritório */}
             <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
                 <Link href="/" aria-label="Página inicial">
@@ -17,10 +17,17 @@ export default function Header() {
                         width={220}
                         height={56}
                         priority
-                        className="h-20 w-auto sm:h-25 md:h-25"
+                        className="h-20 w-auto sm:h-12 md:h-14"
                     />
                 </Link>
             </motion.div>
+
+            {/* Menu de navegação */}
+            <nav className="hidden md:flex items-center gap-8 text-sm text-gray-300">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <Link href="/#sobre" className="hover:text-white transition-colors">Sobre</Link>
+                <Link href="/#defesa" className="hover:text-white transition-colors">Defesa Imediata</Link>
+            </nav>
 
             {/* CTA WhatsApp */}
             <motion.a

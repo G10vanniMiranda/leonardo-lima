@@ -48,19 +48,17 @@ export default function Home() {
       </div>
 
       {/* SEÇÃO 1 */}
-      <section className="pt-16 pb-16 relative flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16">
+      <section className="pt-16 pb-40 md:pt-28 md:pb-20 relative max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 md:px-16 md:min-h-dvh">
         {/* OVERLAY DO TEXTO (SEÇÃO 1)
-            - Mobile: este bloco fica sobre a imagem
-            - AJUSTE A POSIÇÃO VERTICAL: altere o valor de 'top-[60%]' abaixo
-              Ex.: top-[55%] (sobe um pouco) | top-[65%] (abaixa um pouco)
-            - Se quiser que o ponto de ancoragem seja no CENTRO do bloco, mantenha '-translate-y-1/2'.
-              Para ancorar pelo topo, remova '-translate-y-1/2'.
+            - Mobile: este bloco fica sobre a imagem, ancorado pelo fundo (bottom-6)
+            - Para ajustar a posição no mobile, altere o valor de 'bottom-6' (ex.: bottom-4, bottom-10)
+            - No desktop (md+), o bloco volta ao fluxo normal (md:static)
         */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="absolute left-0 right-0 top-[85%] -translate-y-1/2 z-10 px-4 flex items-end md:static md:translate-y-0 md:flex-1 md:px-0 md:z-auto text-center md:text-left"
+          className="absolute inset-x-0 bottom-6 z-10 px-4 flex items-end md:static md:translate-y-0 md:flex-1 md:items-center md:px-0 md:z-auto text-center md:text-left"
         >
           {/* FUNDO EM GRADIENTE (legibilidade no mobile)
               - Ajuste a opacidade se precisar: from-black/70 -> from-black/60 ou /80
@@ -90,12 +88,12 @@ export default function Home() {
           className="order-first md:order-0 w-full md:flex-1 flex justify-center"
         >
           {/* IMAGEM DA SEÇÃO 1 (mobile ocupa 100% de largura; md+ tamanho fixo) */}
-          <div className="relative w-full h-[420px] md:w-[420px] md:h-[420px] rounded-2xl shadow-lg shadow-gray-800/50 border border-gray-700 overflow-hidden">
+          <div className="relative w-full h-[480px] md:w-[560px] md:h-[560px] lg:w-[640px] lg:h-[640px] xl:w-[720px] xl:h-[720px] rounded-2xl shadow-lg shadow-gray-800/50 border border-gray-700 overflow-hidden">
             <Image
               src="/advogado.png"
-              alt="Foto do advogado"
+              alt="Dr. Leonardo Lima — Advogado Criminalista (OAB/BA 87995)"
               fill
-              sizes="(min-width: 768px) 420px, 100vw"
+              sizes="(min-width: 1280px) 720px, (min-width: 1024px) 640px, (min-width: 768px) 560px, 100vw"
               className="object-cover hover:scale-105 transition-all"
             />
           </div>
@@ -103,9 +101,9 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO 2 */}
-      <section className="relative pt-34 py-24 px-8 text-center md:text-left overflow-hidden">
+      <section id="sobre" className="relative pt-14 pb-16 px-8 text-center md:text-left overflow-hidden scroll-mt-28 md:scroll-mt-24">
         {/* Vídeo de fundo suave */}
-        <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute inset-0 z-0 opacity-30">
           <video autoPlay loop muted className="w-full h-full object-cover">
             <source src="/tribunal.mp4" type="video/mp4" />
           </video>
@@ -146,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO 3 - CTA FINAL */}
-      <section className="py-24 bg-linear-to-b from-black to-gray-900 text-center relative">
+      <section id="defesa" className="pt-12 pb-20 bg-linear-to-b from-black to-gray-900 text-center relative scroll-mt-28 md:scroll-mt-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

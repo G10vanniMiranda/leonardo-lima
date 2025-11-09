@@ -34,10 +34,10 @@ export default function Footer() {
                         <li>
                             E-mail:{" "}
                             <a
-                                href="mailto:drleonardolimaadv@gmail.com"
+                                href="mailto:advogado@leolima.adv.br"
                                 className="text-gray-200 hover:text-gray-100 transition"
                             >
-                                drleonardolimaadv@gmail.com
+                                advogado@leolima.adv.br
                             </a>
                         </li>
                         <li>Atendimento: seg–sex, 9h–18h</li>
@@ -52,13 +52,13 @@ export default function Footer() {
                     </h4>
                     <ul className="space-y-1 text-gray-400">
                         <li>
-                            <a href="#sobre" className="hover:text-gray-200 transition">
+                            <a href="/#sobre" className="hover:text-gray-200 transition">
                                 Sobre
                             </a>
                         </li>
                         <li>
-                            <a href="#contato" className="hover:text-gray-200 transition">
-                                Ajuda agora
+                            <a href="/#defesa" className="hover:text-gray-200 transition">
+                                Defesa imediata
                             </a>
                         </li>
                         <li>
