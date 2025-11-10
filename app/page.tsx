@@ -88,12 +88,12 @@ export default function Home() {
           className="order-first md:order-0 w-full md:flex-1 flex justify-center"
         >
           {/* IMAGEM DA SEÇÃO 1 (mobile ocupa 100% de largura; md+ tamanho fixo) */}
-          <div className="relative w-full h-[480px] md:w-[560px] md:h-[560px] lg:w-[640px] lg:h-[640px] xl:w-[720px] xl:h-[720px] rounded-2xl shadow-lg shadow-gray-800/50 border border-gray-700 overflow-hidden">
+          <div className="relative w-full h-[480px] md:w-[380px] md:h-[380px] lg:w-[460px] lg:h-[460px] xl:w-[540px] xl:h-[540px] rounded-2xl shadow-lg shadow-gray-800/50 border border-gray-700 overflow-hidden">
             <Image
               src="/advogado.png"
               alt="Dr. Leonardo Lima — Advogado Criminalista (OAB/BA 87995)"
               fill
-              sizes="(min-width: 1280px) 720px, (min-width: 1024px) 640px, (min-width: 768px) 560px, 100vw"
+              sizes="(min-width: 1280px) 640px, (min-width: 1024px) 460px, (min-width: 768px) 380px, 100vw"
               className="object-cover hover:scale-105 transition-all"
             />
           </div>
