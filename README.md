@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Page — Dr. Leonardo Lima (Criminalista)
 
-## Getting Started
+Landing page moderna e focada em conversão para advogado criminalista, desenvolvida com Next.js, TypeScript e TailwindCSS, com estilo tecnológico/futurista em paleta preto e cinza.
 
-First, run the development server:
+---
+
+## 📌 Objetivo do Projeto
+
+Criar uma landing page de alta conversão para captação imediata de leads via WhatsApp, transmitindo autoridade, confiança e modernidade para a marca pessoal do advogado.
+
+---
+
+## 🧱 Estrutura do Projeto
+
+O projeto é modularizado por componentes:
+
+/components
+├── Topbar.tsx
+├── Header.tsx
+├── Footer.tsx
+├── SectionHero.tsx
+├── SectionSobre.tsx
+└── SectionCTA.tsx
+
+/app
+└── page.tsx
+
+
+---
+
+## 🖼️ Preview das Seções
+
+> Cole os prints das seções abaixo:
+
+### 1. Topbar
+<img src="" alt="Preview Topbar" />
+
+### 2. Header
+<img src="" alt="Preview Header" />
+
+### 3. Seção 1 — Hero (Foto + Descrição)
+<img src="" alt="Preview Seção Hero" />
+
+### 4. Seção 2 — Sobre o Advogado (Tribunal)
+<img src="" alt="Preview Seção Sobre" />
+
+### 5. Seção 3 — Chamada para Ação
+<img src="" alt="Preview Seção CTA" />
+
+### 6. Footer
+<img src="" alt="Preview Footer" />
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- Next.js
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- TSParticles
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+Instale as dependências:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rode o projeto:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto será executado em:
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Padrão Visual
 
-## Learn More
+Paleta: Preto e Cinza
 
-To learn more about Next.js, take a look at the following resources:
+Estilo: Tecnológico / Futurista
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Design focado em conversão
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Animações suaves
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📞 Dados do Cliente (Editáveis)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Essas informações podem ser alteradas direto nos componentes:
+
+Nome: Dr. Leonardo Lima
+
+OAB: OAB/BA 87995
+
+WhatsApp: inserir número real
+
+E-mail: inserir e-mail real
+
+
+## 📄 Licença
+
+Projeto desenvolvido exclusivamente para uso do cliente.
+
+---
+
+Desenvolvido por Giovanni Miranda.
