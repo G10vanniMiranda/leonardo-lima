@@ -1,112 +1,134 @@
 # Landing Page — Dr. Leonardo Lima (Criminalista)
 
-Landing page moderna e focada em conversão para advogado criminalista, desenvolvida com Next.js, TypeScript e TailwindCSS, com estilo tecnológico/futurista em paleta preto e cinza.
+Landing page moderna e focada em conversão para captação imediata via WhatsApp. Stack: Next.js + TypeScript + TailwindCSS + Framer Motion + TSParticles.
 
 ---
 
-## 📌 Objetivo do Projeto
+## 📌 Objetivo
 
-Criar uma landing page de alta conversão para captação imediata de leads via WhatsApp, transmitindo autoridade, confiança e modernidade para a marca pessoal do advogado.
-
----
-
-## 🧱 Estrutura do Projeto
-
-O projeto é modularizado por componentes:
-
-/components
-├── Topbar.tsx
-├── Header.tsx
-├── Footer.tsx
-├── SectionHero.tsx
-├── SectionSobre.tsx
-└── SectionCTA.tsx
-
-/app
-└── page.tsx
-
+Transmitir autoridade, rapidez na resposta (defesa imediata) e modernidade, com CTA destacado (WhatsApp 24h).
 
 ---
 
 ## 🖼️ Preview das Seções
-
-> Cole os prints das seções abaixo:
-
-### 1. Topbar
-<img src="" alt="Preview Topbar" />
-
-### 2. Header
-<img src="" alt="Preview Header" />
-
-### 3. Seção 1 — Hero (Foto + Descrição)
-<img src="" alt="Preview Seção Hero" />
-
-### 4. Seção 2 — Sobre o Advogado (Tribunal)
-<img src="" alt="Preview Seção Sobre" />
-
-### 5. Seção 3 — Chamada para Ação
-<img src="" alt="Preview Seção CTA" />
-
-### 6. Footer
-<img src="" alt="Preview Footer" />
+> Insira seus prints reais em /public/preview (manter nomes):
+1. Topbar (`/preview/topBar.jpg`)
+2. Header (`/preview/header.jpg`)
+3. Hero (`/preview/secao1.jpg`)
+4. Sobre (`/preview/secao2.jpg`)
+5. CTA Final (`/preview/secao3.jpg`)
+6. Footer (`/preview/footer.jpg`)
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias
 
-- Next.js
+- Next.js (App Router)
 - TypeScript
 - TailwindCSS
 - Framer Motion
-- TSParticles
+- TSParticles (efeito de fundo)
+- Deploy recomendado: Vercel
 
 ---
 
-## 🚀 Como Rodar o Projeto
-
-Instale as dependências:
+## 🚀 Como Rodar
 
 ```bash
 npm install
-```
-
-Rode o projeto:
-```bash
 npm run dev
+# produção
+npm run build
+npm start
+# lint
+npm run lint
 ```
 
-O projeto será executado em:
-```bash
-http://localhost:3000
+Acesse: http://localhost:3000
+
+---
+
+## 📁 Estrutura /public (necessário adicionar)
+```
+public/
+  advogado.png
+  foto2.png
+  tribunal.mp4
+  logo.png
+  preview/
+    topBar.jpg
+    header.jpg
+    secao1.jpg
+    secao2.jpg
+    secao3.jpg
+    footer.jpg
 ```
 
-## 🎨 Padrão Visual
+---
 
-Paleta: Preto e Cinza
+## 🎨 Visual / UX
 
-Estilo: Tecnológico / Futurista
+- Paleta: preto/cinza + cinzas neutros.
+- Estilo: tecnológico/futurista minimalista.
+- Foco: CTA WhatsApp + atendimento 24h.
+- Animações suaves (framer-motion).
+- Preferência de acessibilidade: pode adicionar em globals.css:
+```css
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+```
 
-Design focado em conversão
+---
 
-Animações suaves
+## 🔐 Acessibilidade / SEO
 
+- Alt das imagens inclui nome e função (ex.: “Dr. Leonardo Lima — Advogado Criminalista”).
+- Headings sem pular níveis (Hero = h2 porque o título global pode vir do layout).
+- Metadados (sugestão em `app/layout.tsx`):
+```ts
+export const metadata = {
+  title: 'Dr. Leonardo Lima | Defesa Criminal Imediata',
+  description: 'Advogado criminalista OAB/BA 87995. Defesa em flagrantes e audiências de custódia. Atendimento ágil e humanizado.',
+  openGraph: {
+    title: 'Defesa Criminal Imediata — Dr. Leonardo Lima',
+    type: 'website',
+    locale: 'pt_BR',
+  },
+};
+```
 
-## 📞 Dados do Cliente (Editáveis)
+---
 
-Essas informações podem ser alteradas direto nos componentes:
+## 📞 Dados do Cliente
 
-Nome: Dr. Leonardo Lima
+- Nome: Dr. Leonardo Lima
+- OAB: OAB/BA 87995
+- WhatsApp: +55 69 99263-8989 (link: https://wa.me/5569992638989)
+- E-mail: advogado@leolima.adv.br
+- Local: Salvador/BA — Centro
 
-OAB: OAB/BA 87995
+---
 
-WhatsApp: inserir número real
+## 🔒 Aviso Legal (resumo)
 
-E-mail: inserir e-mail real
+Conteúdo informativo; não substitui consulta jurídica individualizada. Cada caso deve ser analisado de forma específica. Veja páginas: /termos-de-uso, /privacidade, /aviso-legal.
 
+---
 
-## 📄 Licença
+## ✨ Melhorias futuras (backlog)
 
-Projeto desenvolvido exclusivamente para uso do cliente.
+- Depoimentos (prova social)
+- Log de revisões de documentos legais
+- Scroll spy (menu ativo)
+- Mensagem pré-formatada no WhatsApp
+- Dark/light automatico (mantendo foco escuro)
+
+---
+
+## 📄 Licença / Uso
+
+Uso exclusivo do cliente (Dr. Leonardo Lima). Proibida redistribuição ou comercialização sem autorização expressa.
 
 ---
 
